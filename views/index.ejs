@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+   <div class="todo">Todo List</div>
+   <div class="box">
+    <!-- <% for(let i=0;i< data.length ; i++){%>
+        <div class="check">
+            <input type="checkbox" id="check">
+            <p for="check"> <%= data[i].input %></p>
+        </div>
+    <% } %> -->
+
+    <% for(let i=0; i< data.length; i++){%>
+        <form action="/delete" method="POST">
+            <input type="checkbox" id="checked" onchange="this.form.submit()" name="check" value="<%=data[i].input%>">
+            <p><%=data[i].input%></p>
+
+        </form>
+    <% } %>
+        <form action="/" method="POST">
+            <input type="text" placeholder="Enter todo item" name="name" autocomplete="off">
+            <button>+</button>
+        </form>
+   </div>
+
+</body>
+</html>

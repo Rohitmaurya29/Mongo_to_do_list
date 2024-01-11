@@ -1,0 +1,57 @@
+body{
+  background-image: linear-gradient(202deg, rgb(228,233,253) 65%,rgb(166,131,227) 35%);
+  min-height: 671px;
+  
+}.todo{
+  font-size:32px;
+  font-family: 'poppins', sans-serif;
+  font-weight:600;
+  /* height:50px; */
+  background-color:white;
+  max-width:258px;
+  margin:50px auto 0;
+  text-align:center;
+  padding:5px;
+  border:white;
+  box-shadow:5px 5px 10px gray;
+}
+
+.check{
+  display:flex;
+}
+
+input[type=text]{
+  padding:13px;
+  max-width:250px;
+  margin:10px auto 0;
+  font-size:20px;
+  font-family:'poppins', sans-serif;
+  font-weight:500px;
+  /* box-shadow:5px 5px 10px gray; */
+  border:white;
+}
+
+
+button{
+  border-radius:50%;
+  padding:13px;
+  margin-left:-50px;
+  position:relative;
+  background-color:rgb(166,131,227);
+  color:white;
+  border:rgb(166,131,227);
+  
+}
+
+.box {
+  max-width: 285px;
+  margin: 0 auto;
+  background-color: white;
+  box-shadow:5px 5px 10px gray;
+  margin-top: 15px;
+}
+
+
+#check:checked + p{
+  text-decoration: line-through;
+}
